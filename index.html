@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XoYokeBridge - Advanced Flight Hardware Bridge for Xbox MSFS</title>
+    <style>
+        :root {
+            --primary-color: #0078d4;
+            --text-dark: #24292e;
+            --text-light: #586069;
+            --bg-light: #f6f8fa;
+            --border-color: #e1e4e8;
+            --warning-bg: #fff8e1;
+            --warning-border: #ffe082;
+            --warning-text: #b78103;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .logo-container {
+            margin-bottom: 20px;
+        }
+
+        .logo-placeholder {
+            display: inline-block;
+            width: 120px;
+            height: 120px;
+            background-color: var(--bg-light);
+            border: 2px dashed var(--border-color);
+            border-radius: 8px;
+            line-height: 120px;
+            color: var(--text-light);
+            font-size: 14px;
+        }
+
+        .logo-img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: var(--text-dark);
+            line-height: 1.3;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--text-dark);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-top: 40px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .download-section {
+            text-align: center;
+            margin: 40px 0;
+            padding: 30px;
+            background-color: var(--bg-light);
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .download-button {
+            display: inline-block;
+            text-decoration: none;
+            transition: transform 0.2s ease;
+        }
+
+        .download-button:hover {
+            transform: scale(1.03);
+        }
+
+        .download-button img {
+            max-width: 250px;
+            height: auto;
+            display: block;
+        }
+
+        ol {
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        li {
+            color: var(--text-light);
+            font-size: 1.05rem;
+            margin-bottom: 12px;
+        }
+
+        .transparency-note {
+            background-color: var(--warning-bg);
+            border: 1px solid var(--warning-border);
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .transparency-note h3 {
+            margin-top: 0;
+            color: var(--warning-text);
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .transparency-note p {
+            color: #6d4c41;
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+
+        .tracking-id {
+            font-family: monospace;
+            background-color: rgba(0, 0, 0, 0.05);
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="logo.png" alt="XoYokeBridge Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+                <div class="logo-placeholder" style="display: none;">XoYokeBridge</div>
+            </div>
+            <h1>Advanced Custom Hardware Bridge for Xbox Microsoft Flight Simulator (MSFS) using Logitech Yoke</h1>
+        </header>
+
+        <main>
+            <h2>XoYokeBridge - Hardware that connects to Logitech Yoke</h2>
+            <p>The XoYokeBridge hardware-and-firmware system empowers you to use a Logitech flight yoke, throttle quadrant, and rudder pedals to control Microsoft Flight Simulator on an Xbox ecosystem. The XoYokeBridge hardware unit connects directly to your Logitech equipment, instantly recognizing the yoke, switches, and pedal inputs to read your movements with precision. Operating over your home Wi-Fi network, it automatically locates your network's computer to beam your real-time control data across the room with near-zero latency, using integrated indicator lights to display streaming status, automatically recovering from temporary network drops, and featuring a built-in setup interface for effortless network updates.</p>
+
+            <h2>XoYokeBridge v1.0 - Software</h2>
+            <p>Seamlessly map your custom hardware input data directly into the Xbox ecosystem using an automated local virtualization layer.</p>
+            <p>The XoYokeBridge software receives this wireless data stream, cleans and calibrates the control signals, and converts them into a virtual Xbox controller format. The Xbox app or Microsoft Flight Simulator then reads the flight hardware as a native, fully responsive game controller. In simple terms, the entire system acts like a high-speed wireless translator that captures commands from your flight controls and instantly converts them into standard Xbox inputs, allowing you to fly your aircraft without long, messy USB cables. You can hide the PC.</p>
+
+            <h2>Installation Instructions</h2>
+            
+            <div class="download-section">
+                <a href="XoYokeBridge_Setup.exe" class="download-button" download="XoYokeBridge_Setup.exe">
+                    <img src="download-icon.png" alt="Download XoYokeBridge Installer" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <button style="display: none; padding: 12px 24px; background-color: #0078d4; color: white; border: none; border-radius: 6px; font-size: 1.1rem; font-weight: bold; cursor: pointer;">Download XoYokeBridge Installer (.exe)</button>
+                </a>
+            </div>
+
+            <ol>
+                <li>Click the Download button above and save the installer to your device.</li>
+                <li>Double-click XoYokeBridge_Setup.exe to initiate the configuration wizard.</li>
+                <li>Review and accept the End User License Agreement (EULA) registered under XOANON LLC.</li>
+                <li>The setup interface will automatically initialize the essential ViGEmBus framework in the background.</li>
+                <li>Toggle the checkbox to generate a desktop utility shortcut icon, and click Finish to complete deployment.</li>
+            </ol>
+
+            <div class="transparency-note">
+                <h3>Developer Transparency Note (SmartScreen Filter)</h3>
+                <p>Because XoYokeBridge is an independent, specialized flight simulation tool delivered directly from our domain rather than standard retail store frameworks, browsers or Windows SmartScreen may flag the initial download as unrecognized.</p>
+                <p style="margin-top: 10px; margin-bottom: 10px;">This is expected behavior for specialized indie development utilities. The underlying application architecture has been formally analyzed and officially cleared of all malware and security flags by Microsoft Security Intelligence (Tracking ID: <span class="tracking-id">7a596422-0704-4292-894e-f90cbae0188e</span>).</p>
+                <p style="margin-top: 10px;">To safely run the deployment wizard: Click <strong>More Info</strong> inside the blue alert interface overlay, and select <strong>Run Anyway</strong>.</p>
+            </div>
+        </main>
+
+        <footer>
+            &copy; 2026 XOANON LLC. All rights reserved. Distributed under strict corporate asset safety protections.
+        </footer>
+    </div>
+
+</body>
+</html>
